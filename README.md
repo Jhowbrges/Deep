@@ -229,18 +229,7 @@ php artisan test</code></pre>
 
 <hr />
 
-<h2>📌 Próximas Melhorias</h2>
-<ul>
-  <li>Adicionar níveis de acesso (perfis/roles)</li>
-  <li>Adicionar gráficos mais avançados (ex: Chart.js)</li>
-  <li>Paginação e filtros nas métricas</li>
-  <li>Exportação de relatórios (CSV/PDF)</li>
-  <li>Pipeline CI para rodar testes automaticamente no GitHub</li>
-</ul>
-
-<hr />
-
 <h2>👨‍💻 Autor</h2>
 <p>
   Desenvolvido por <b>Jhonatan Borges</b>.
-</p>/p>
+</p>
