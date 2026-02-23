@@ -1,59 +1,153 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>🔐 Auth System - Laravel</h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<p>
+  Sistema de autenticação desenvolvido com <b>Laravel 12</b>, contendo registro, login, verificação de e-mail,
+  atualização de perfil com upload de foto e dashboard com métricas de navegação.
 </p>
 
-## About Laravel
+<hr />
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>🚀 Tecnologias Utilizadas</h2>
+<ul>
+  <li>PHP 8.2</li>
+  <li>Laravel 12</li>
+  <li>MySQL 8</li>
+  <li>Laravel Breeze (Autenticação)</li>
+  <li>TailwindCSS</li>
+  <li>PHPUnit (Testes automatizados)</li>
+</ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<hr />
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h2>📌 Funcionalidades</h2>
 
-## Learning Laravel
+<h3>🔐 Autenticação</h3>
+<ul>
+  <li>Cadastro (registro) de usuário</li>
+  <li>Login e logout</li>
+  <li>Recuperação de senha</li>
+  <li>Confirmação de senha</li>
+  <li>Verificação de e-mail</li>
+</ul>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+<h3>👤 Perfil</h3>
+<ul>
+  <li>Atualização de nome e e-mail</li>
+  <li>Alteração de senha (com validação forte)</li>
+  <li>Upload de foto de perfil</li>
+  <li>Exclusão de conta</li>
+</ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h3>📊 Dashboard</h3>
+<ul>
+  <li>Informações do usuário autenticado</li>
+  <li>Métricas de navegação</li>
+  <li>Contagem de páginas mais acessadas</li>
+  <li>Interface 100% em português (sem termos técnicos desnecessários)</li>
+</ul>
 
-## Laravel Sponsors
+<h3>📈 Monitoramento</h3>
+<ul>
+  <li>Middleware para registrar páginas visitadas</li>
+  <li>Armazenamento em banco de dados</li>
+  <li>Exibição de estatísticas no dashboard</li>
+</ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<hr />
 
-### Premium Partners
+<h2>🛠️ Como Rodar o Projeto</h2>
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+<h3>1️⃣ Clonar o repositório</h3>
+<pre><code>git clone https://github.com/Jhowbrges/Deep.git
+cd Deep</code></pre>
 
-## Contributing
+<h3>2️⃣ Instalar dependências</h3>
+<pre><code>composer install
+npm install</code></pre>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<h3>3️⃣ Configurar ambiente</h3>
+<p>Copie o arquivo de exemplo e edite as credenciais do banco MySQL:</p>
+<pre><code>cp .env.example .env</code></pre>
 
-## Code of Conduct
+<p>Gerar a chave da aplicação:</p>
+<pre><code>php artisan key:generate</code></pre>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<h3>4️⃣ Rodar migrations</h3>
+<pre><code>php artisan migrate</code></pre>
 
-## Security Vulnerabilities
+<h3>5️⃣ Rodar o projeto</h3>
+<pre><code>npm run dev
+php artisan serve</code></pre>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<p>Acesse:</p>
+<pre><code>http://127.0.0.1:8000</code></pre>
 
-## License
+<hr />
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<h2>🧪 Testes Automatizados</h2>
+
+<p>O projeto possui testes para os fluxos principais:</p>
+<ul>
+  <li>Autenticação</li>
+  <li>Cadastro</li>
+  <li>Verificação de e-mail</li>
+  <li>Recuperação e alteração de senha</li>
+  <li>Atualização de perfil</li>
+  <li>Exclusão de conta</li>
+</ul>
+
+<p>Rodar testes:</p>
+<pre><code>php artisan test</code></pre>
+
+<hr />
+
+<h2>🗄️ Banco de Dados</h2>
+
+<p><b>Banco utilizado:</b> MySQL</p>
+
+<p><b>Principais tabelas:</b></p>
+<ul>
+  <li><code>users</code> (usuários)</li>
+  <li><code>page_views</code> (registros de navegação)</li>
+  <li><code>sessions</code> (sessões)</li>
+  <li><code>password_reset_tokens</code> (tokens de reset)</li>
+</ul>
+
+<hr />
+
+<h2>🔒 Segurança</h2>
+<ul>
+  <li>Senhas armazenadas com hash</li>
+  <li>Validação forte para troca de senha</li>
+  <li>Proteção CSRF</li>
+  <li>Rotas protegidas por autenticação</li>
+  <li>Verificação de e-mail suportada</li>
+</ul>
+
+<hr />
+
+<h2>📎 Decisões Técnicas</h2>
+<ul>
+  <li>Uso do Breeze para manter padrão Laravel e acelerar setup</li>
+  <li>Middleware para rastrear acessos e alimentar métricas do dashboard</li>
+  <li>Validações isoladas com <code>FormRequest</code></li>
+  <li>Upload de foto persistido com disco <code>public</code></li>
+</ul>
+
+<hr />
+
+<h2>📌 Próximas Melhorias</h2>
+<ul>
+  <li>Adicionar níveis de acesso (perfis/roles)</li>
+  <li>Adicionar gráficos mais avançados (ex: Chart.js)</li>
+  <li>Paginação e filtros nas métricas</li>
+  <li>Exportação de relatórios (CSV/PDF)</li>
+  <li>Pipeline CI para rodar testes automaticamente no GitHub</li>
+</ul>
+
+<hr />
+
+<h2>👨‍💻 Autor</h2>
+<p>
+  Desenvolvido por <b>Jhonatan Borges</b>.
+</p>
